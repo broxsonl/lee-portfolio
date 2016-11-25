@@ -18,9 +18,12 @@
   },
   "homepage": "https://github.com/broxsonl/lee-portfolio#readme",
   "dependencies": {
+    "angular": "^1.5.9",
+    "camelcase": "^4.0.0",
     "clean-webpack-plugin": "^0.1.14",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.24.1",
+    "pascalcase": "^0.1.1",
     "webpack": "^1.13.3"
   }
 }
