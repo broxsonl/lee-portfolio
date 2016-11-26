@@ -1,6 +1,6 @@
 'use strict';
 
-require('./scss.main.scss');
+require('./scss/main.scss');
 
 // node modules
 const path = require('path');
@@ -68,12 +68,4 @@ context.keys().forEach( key => {
   let name = camelcase(path.basename(key, '.js'));
   let module = context(key); // value of module.exports
   portfolio.directive(name, module);
-});
-
-// load filters
-context = require.context('./filter/', true, /.js$/);
-context.keys().forEach( key => {
-  let name = camelcase(path.basename(key, '.js'));
-  let module = context(key); // value of module.exports
-  portfolio.filter(name, module);
 });
